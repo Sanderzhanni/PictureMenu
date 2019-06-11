@@ -1,0 +1,48 @@
+.face1{
+  position: absolute;
+  z-index: 4;
+  opacity: 1;
+}
+
+.face2{
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+}
+
+.face3{
+  position: absolute;
+  z-index: 3;
+  opacity: 0;
+}
+
+.face4{
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+
+.lips{
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+
+.eyes{
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+
+.brow{
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+}
+
+.imageContainer{
+   position:relative;
+   height:281px;
+   width:450px;
+   margin:0 auto;
+}
