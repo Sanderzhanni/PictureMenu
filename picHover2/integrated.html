@@ -1,3 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <style>
+  .face1{
+    position: absolute;
+    z-index: 4;
+    opacity: 1;
+  }
+
+  .face2{
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+  }
+
+  .face3{
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+  }
+
+  .face4{
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+  }
+
+  .lips{
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+  }
+
+  .eyes{
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+  }
+
+  .brow{
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+  }
+
+  .imageContainer{
+    grid-column: 2/2;
+    grid-row: 2/2;}
+
+  .textContainer{
+    grid-column:1/2;
+    grid-row: 1/2;
+    padding-right: 5vw;
+    text-align: right;
+  }
+
+  .textAllign{
+    position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  }
+
+  .gridContainer{
+    display:grid;
+    grid-template-columns: 50vw auto;
+    height: 750px;
+  }
+
+  h3{
+    letter-spacing: 3px;
+    font-size: 32px;
+    display: grid;
+      grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+      align-items: center;
+      text-align: center;
+      grid-gap: 20px;
+      width: 100%;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+  }
+
+  h3:before,
+  h3:after {
+      content: '';
+      border-top: 1px solid;
+  }
+
+  p{
+    text-align: justify;
+    padding-left: 12px;
+    font-family: 'Lora', serif;
+  }
+
+  </style>
+  <title>PicAnim</title>
+</head>
+<body>
+
+  <div class="gridContainer">
+    <div class="textContainer">
+
+      <div class="textAllign">
+        <div class="brows" id="brows">
+          <h3>Kulmud</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+
+        <div class="silmaliner" id="silmaliner">
+          <h3>Silmaliner</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        </div>
+
+        <div class="huuled" id="huuled">
+          <h3>Huuled</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        </div>
+
+        <div class="face" id="face">
+          <h3>Näo hooldus</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        </div>
+      </div>
+
+
+    </div>
+
+    <div id="imageContainer">
+      <img src="https://permanentbrowstudio.ee/wp-content/uploads/2019/06/face1.png" usemap="#image-map" id="face1" class="face1">
+      <img src="https://permanentbrowstudio.ee/wp-content/uploads/2019/06/face2.png" usemap="#image-map" id="face2" class="face2">
+      <img src="https://permanentbrowstudio.ee/wp-content/uploads/2019/06/face3.png" usemap="#image-map" id="face3" class="face3">
+      <img src="https://permanentbrowstudio.ee/wp-content/uploads/2019/06/face4.png" usemap="#image-map" id="face4" class="face4">
+      <img src="https://permanentbrowstudio.ee/wp-content/uploads/2019/06/lips.png" usemap="#image-map" id="lips" class="lips">
+      <img src="https://permanentbrowstudio.ee/wp-content/uploads/2019/06/eyes.png" usemap="#image-map" id="eyes" class="eyes">
+      <img src="https://permanentbrowstudio.ee/wp-content/uploads/2019/06/brow.png" usemap="#image-map" id="brow" class="brow">
+    </div>
+
+  </div>
+
+
+
+  <!-- Image Map Generated by http://www.image-map.net/ -->
+
+
+  <map name="image-map">
+    <area target="" alt="" title="" href="" coords="269,558,309,532,331,538,341,532,387,562,369,592,311,604,269,588" shape="poly" id="area1">
+    <area target="" alt="" title="" href="" coords="367,388,369,370,409,346,461,364,431,392" shape="poly" id="area2">
+    <area target="" alt="" title="" href="" coords="269,388,275,370,223,348,183,372,209,394" shape="poly" id="area3">
+    <area target="" alt="" title="" href="" coords="361,338,363,320,445,302,487,334,445,320" shape="poly" id="area4">
+    <area target="" alt="" title="" href="" coords="279,336,279,320,199,300,153,330,197,316" shape="poly" id="area5">
+  </map>
+
+<script>
 /*jshint esversion: 6*/
 
 let running;
@@ -10,9 +172,11 @@ let ended;
 
 window.onload = function() {
   if (document.readyState === "complete"){
-    animateOnPageLoad();
+
   }
 };
+
+animateOnPageLoad();
 
 function animateOnPageLoad(){
   setTimeout(function(){
@@ -257,3 +421,7 @@ document.getElementById("huuled").addEventListener('mouseleave', function(){
   console.log("out");
     checkRunning(pic);
 });
+
+</script>
+</body>
+</html>

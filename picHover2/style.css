@@ -41,8 +41,54 @@
 }
 
 .imageContainer{
-   position:relative;
-   height:281px;
-   width:450px;
-   margin:0 auto;
+  grid-column: 2/2;
+  grid-row: 2/2;
+  justify-content: center;
+}
+
+.textContainer{
+  grid-column:1/2;
+  grid-row: 1/2;
+  padding-right: 5vw;
+  text-align: right;
+  height: 60%;
+}
+
+.textAllign{
+  position: relative;
+  padding-left: 30px;
+}
+
+.gridContainer{
+  display:grid;
+  grid-template-columns: 50vw auto;
+  height: 90%;
+}
+
+h3{
+  letter-spacing: 3px;
+  font-size: 32px;
+  display: grid;
+  grid-gap: 20px;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  animation:
+}
+
+.brows:hover, .silmaliner:hover, .huuled:hover{
+  border: solid pink 0px;
+  border-radius: 10px;
+  background-color: rgba(255,192,203, 0.3);
+  transition-duration: 1s;
+  transform: scale(1.1);
+}
+
+
+
+p{
+  text-align: justify;
+  padding-left: 12px;
+  font-family: 'Lora', serif;
 }
